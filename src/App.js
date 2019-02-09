@@ -9,7 +9,7 @@ import Navigation from './components/Navigation/NavIndex'
 // import HomePage from './components/Home';
 // import AccountPage from './components/Account';
 // import AdminPage from './components/Admin';
-
+import MapContainer from './components/Home/MapContainer'
 import * as ROUTES from './constants/routes';
 
 class App extends Component {
@@ -28,6 +28,7 @@ class App extends Component {
           <Route path={ROUTES.HOME} component={HomePage} />
           <Route path={ROUTES.ACCOUNT} component={AccountPage} />
           <Route path={ROUTES.ADMIN} component={AdminPage} /> */}
+          <MapContainer />
         </div>
       </Router>
     );

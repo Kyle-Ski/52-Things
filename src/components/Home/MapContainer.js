@@ -18,7 +18,7 @@ export class MapContainer extends Component {
     }
 
     onMarkerClick=(marker, e)=>{
-        console.log(marker)
+        console.log('marker')
         // this.setState({infoVis: true, activeMarker: marker})
     }
     render() {

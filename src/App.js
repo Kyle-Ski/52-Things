@@ -13,10 +13,21 @@ import MapContainer from './components/Home/MapContainer'
 import * as ROUTES from './constants/routes';
 
 class App extends Component {
+
+  fetchPlace = () => {
+    fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=${process.env.REACT_APP_API_KEY}`,{
+      mode: 'cors'
+    })
+      .then(res => res.json())
+      .then(console.log)
+      .catch(err => console.error('fetchPlace err:', err))
+  }
+
   render() {
     return (
       <Router>
         <div>
+        <button onClick={this.fetchPlace}>Fetch Place</button>
           <Navigation />
 
           <hr />

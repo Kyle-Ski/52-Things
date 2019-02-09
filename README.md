@@ -26,5 +26,3 @@ An application that will suggest something/someplace I haven't done/been.
 * Friends
     - Groups
     - See friends past activities
-
-

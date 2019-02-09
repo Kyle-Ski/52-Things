@@ -9,7 +9,6 @@ import 'firebase/auth'
     storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
     messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
   };
-  firebase.initializeApp(config);
 
   class Firebase {
     constructor() {
@@ -26,6 +25,12 @@ import 'firebase/auth'
     }
 
     signOut = () => this.auth.signOut()
+
+    passReset = (email) => this.auth.sendPasswordResetEmail(email)
+
+    passUpdate = (pass) => this.auth.currentUser.updatePassword(pass)
+
+
   }
   
   export default Firebase;

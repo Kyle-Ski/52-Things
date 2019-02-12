@@ -1,11 +1,13 @@
 import React from 'react'
 import LogIn from '../SignIn/LogIn'
 import Container from '../Tools/Container'
+import { Link } from 'react-router-dom'
+import * as ROUTES from '../../constants/routes'
 
 const LandingPage = () =>(
     <Container>
         <LogIn />
-        <h3>Don't have an account? <a href=''>Sign Up</a></h3>
+        <Link to={ROUTES.PASSWORD_FORGET}><h3>Forgot Password?</h3></Link>
     </Container>
 )
 

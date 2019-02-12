@@ -7,7 +7,7 @@ const SignUp = (props) => (
             <input name='lastName' className='input' type='text' placeholder='Last Name'/>
             <input name='email' className='input' type='text' placeholder='Email Address'/>
             <input name='pass' className='input' type='password' placeholder='Password'/>
-            <button className='signup button' onClick={()=>console.log('signup')}>Sign Up</button>
+            <button className='login button' onClick={()=>console.log('signup')}>Sign Up</button>
         </div>
     </Container>
 )

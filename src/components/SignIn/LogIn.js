@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import * as ROUTES from '../../constants/routes'
 
 const LogIn = (props) => (
     <div className='login'>
-        <input className='input' type='text' placeholder='Email Address'/>
-        <input className='input' type='password' placeholder='Password'/>
+        <input name='email' className='input' type='text' placeholder='Email Address'/>
+        <input name='pass' className='input' type='password' placeholder='Password'/>
         <button className='login button' onClick={()=>console.log('login')}>Log In</button>
-        <a href=''><h3>Forgot Password?</h3></a>
+        <h3>Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link></h3>
     </div>
 )
 

@@ -8,7 +8,7 @@ import SignUpPage from './components/SignUp/SignUp';
 // import PasswordForgetPage from './components/PasswordForget';
 // import HomePage from './components/Home';
 // import AccountPage from './components/Account';
-// import AdminPage from './components/Admin';
+import AdminPage from './components/Admin/Admin';
 // import MapContainer from './components/Home/MapContainer'
 import * as ROUTES from './constants/routes';
 
@@ -30,15 +30,15 @@ class App extends Component {
         <button onClick={this.fetchPlace}>Fetch Place</button>
           <Navigation />
 
-          <hr />
+          {/* <hr /> */}
 
           <Route exact path={ROUTES.LANDING} component={LandingPage} />
           <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
           {/* <Route path={ROUTES.SIGN_IN} component={SignInPage} />
           <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
           <Route path={ROUTES.HOME} component={HomePage} />
-          <Route path={ROUTES.ACCOUNT} component={AccountPage} />
-          <Route path={ROUTES.ADMIN} component={AdminPage} /> */}
+          <Route path={ROUTES.ACCOUNT} component={AccountPage} /> */}
+          <Route path={ROUTES.ADMIN} component={AdminPage} />
           {/* <MapContainer /> */}
         </div>
       </Router>
